@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap');
+
+
+#pagina{
+    display: grid;
+    width: 100%; height: 100%;
+    grid-template-areas: "head head"
+        "nav main"
+        "nav foot";
+    grid-template-rows: 50px 1fr 30px;
+    grid-template-columns: 150px 1fr;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+}
+#pagina>header{
+    font-family: 'Roboto Mono', monospace;
+    position: relative;
+    text-align: center;
+    font-size: 25px;
+    grid-area: head;
+    background-color: gold;
+    border-style: solid;
+    border-color: black;
+}
+#pagina>nav{
+    font-family: 'Roboto Mono', monospace;
+    grid-area: nav;
+    background-color: goldenrod;
+    border-style: solid;
+    border-color: black;
+}
+#pagina>main{
+    font-family: 'Roboto Mono', monospace;
+    grid-area: main;
+    background-color: yellow;
+    border-style: solid;
+    border-color: black;
+}
+#pagina>footer{
+    font-family: 'Roboto Mono', monospace;
+    grid-area: foot;
+    background-color: orange;
+    border-style: solid;
+    border-color: black;
+}
